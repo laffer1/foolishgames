@@ -1,10 +1,9 @@
-'use strict';
-
 angular.module('foolishgamesApp')
-  .controller('PoetryCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+        .controller('PoetryCtrl', function ($scope, $routeParams) {
+            $scope.page = null;
+            $scope.slug = $routeParams.page;
+
+            if (typeof $routeParams.page != 'undefined') {
+                $scope.page = 'views/poetry/' + $routeParams.section + '/' + $scope.slug + '.html';
+            }
+        });

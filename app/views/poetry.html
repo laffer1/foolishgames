@@ -1,41 +1,87 @@
 <h2>Poetry</h2>
 
-<div class="row">
+<div ng-show="page != null" ng-include src="page"></div>
 
-<div class="span6">
+<div ng-hide="page != null">
 
-    <h3>Jewel's Poetry</h3>
-    <ul>
+    <div class="row">
 
-        <li><a href="nightwithoutarmor/index.html">A Night Without Armor</a></li>
-        <li><a href="jewelstock/default.htm">JewelStock '96</a></li>
+        <div class="span6">
 
-        <li><a href="poy/index.html">Pieces of You</a></li>
-        <li>Save the Linoleum - <span style="font-family: Arial,Helvetica; "><a
-                href="savethelinoleum/Hommage_to_home.htm">Hommage
-            To Home</a></span></li>
-        <li>You Were Meant For Me (Single) - <span style="font-family: Arial,Helvetica; "><a
-                href="ywmfm/Flight_364.htm">Flight
-            #364</a></span></li>
-    </ul>
-</div>
-    <div class="span6">
-    <h3>Fan Poetry</h3>
+            <h3>Jewel's Poetry</h3>
 
-    <table cols="1" width="50%">
-        <tr>
-            <td><a href="poets">Poetry</a></td>
-        </tr>
-        <tr>
-            <td><a href="guidelines">Guidelines for Submissions</a></td>
-        </tr>
-        <tr>
-            <td><a href="disclaimer">Disclaimer</a></td>
-        </tr>
-        <tr>
-            <td><a href="submit">Submit Poetry</a></td>
-        </tr>
-    </table>
+            <h4>A Night Without Armor</h4>
+            <ul>
+                <li><a href="#/poetry/nightwithoutarmor/index">A Night Without Armor</a></li>
+            </ul>
 
+            <h4>JewelStock '96</h4>
+
+            <p>These poems were written
+                on the night Jewel got sick off the attempt of smoking a cigar. Some titles
+                have been added.</p>
+
+            <ul>
+                <li><a HREF="#/poetry/jewelstock/As_a_child">As A Child</a></li>
+                <li><a HREF="#/poetry/jewelstock/Fat">Fat</a></li>
+                <li><a HREF="#/poetry/jewelstock/God_knows_what_time_it_is">God
+                    knows what time it is</a></li>
+                <li><a HREF="#/poetry/jewelstock/I_am_not_from_here">I am
+                    not from here</a></li>
+                <li><a HREF="#/poetry/jewelstock/Infatuation">Infatuation</a></li>
+                <li><a HREF="#/poetry/jewelstock/Lost">Lost</a></li>
+                <li><a HREF="#/poetry/jewelstock/Sunbathing">Sunbathing</a></li>
+                <li><a HREF="#/poetry/jewelstock/Taking_the_slave">Taking
+                    The Slave</a></li>
+                <li><a HREF="#/poetry/jewelstock/This_cigar">This Cigar</a></li>
+                <li><a HREF="#/poetry/jewelstock/What_i_wanted">What I Wanted</a>
+                </li>
+            </ul>
+
+            <h4>Pieces of You</h4>
+
+            <ul>
+                <li><a href="#/poetry/poy/criticism">Criticism</a></li>
+                <li><a href="#/poetry/poy/faith">Faith Poem (A Poem
+                    About Faith)</a></li>
+                <li><a href="#/poetry/poy/Las_vegas">Las Vegas &amp;
+                    Leaving Las Vegas</a></li>
+                <li><a href="#/poetry/poy/me">Me</a></li>
+                <li><a href="#/poetry/poy/three_other_poems">Three
+                    Other Poems</a></li>
+                <li><a href="#/poetry/poy/Upon_moving_into_my_van">Upon
+                    Moving Into My Van</a></li>
+            </ul>
+
+            <h4>Save the Linoleum</h4>
+            <ul>
+                <li><a
+                        href="#/poetry/savethelinoleum/Hommage_to_home">Hommage
+                    To Home</a></li>
+            </ul>
+            <h4>You Were Meant For Me (Single)</h4>
+            <ul>
+                <li><a href="#/poetry/ywmfm/Flight_364">Flight #364</a></li>
+            </ul>
+        </div>
+        <div class="span6">
+            <h3>Fan Poetry</h3>
+
+            <table cols="1" width="50%">
+                <tr>
+                    <td><a href="#/poetry/fanpoetry/poets">Poetry</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/poetry/fanpoetry/guidelines">Guidelines for Submissions</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/poetry/fanpoetry/disclaimer">Disclaimer</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/poetry/fanpoetry/submit">Submit Poetry</a></td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 </div>
