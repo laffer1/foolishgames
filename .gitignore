@@ -2,3 +2,4 @@ docs/luke/*
 docs/games/*
 *.mno
 Thumbs.db
+.DS_Store

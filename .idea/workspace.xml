@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48b48529-d2f8-4ddb-b35e-9c788020dd37" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/foolishgames.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/3col_rightNav.css" afterPath="$PROJECT_DIR$/docs/styles/3col_rightNav.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/al.gif" afterPath="$PROJECT_DIR$/docs/images/al.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/base.css" afterPath="$PROJECT_DIR$/docs/styles/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/bio.css" afterPath="$PROJECT_DIR$/docs/styles/bio.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/bl.gif" afterPath="$PROJECT_DIR$/docs/images/bl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/body_bg.gif" afterPath="$PROJECT_DIR$/docs/images/body_bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/cl.gif" afterPath="$PROJECT_DIR$/docs/images/cl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/dl.gif" afterPath="$PROJECT_DIR$/docs/images/dl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/doc.css" afterPath="$PROJECT_DIR$/docs/styles/doc.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/el.gif" afterPath="$PROJECT_DIR$/docs/images/el.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg.css" afterPath="$PROJECT_DIR$/docs/styles/fg.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg.gif" afterPath="$PROJECT_DIR$/docs/images/fg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg.mid" afterPath="$PROJECT_DIR$/docs/download/midi/fg.mid" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg2.gif" afterPath="$PROJECT_DIR$/docs/images/fg2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg4bbar.gif" afterPath="$PROJECT_DIR$/docs/images/fg4bbar.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fg_flower.png" afterPath="$PROJECT_DIR$/docs/images/fg_flower.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fgbg9.gif" afterPath="$PROJECT_DIR$/docs/images/fgbg9.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/fl.gif" afterPath="$PROJECT_DIR$/docs/images/fl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/print.css" afterPath="$PROJECT_DIR$/docs/styles/print.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/01.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/01.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/02.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/02.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/03.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/03.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/04.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/04.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/05.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/05.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/06.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/06.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/07.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/07.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/08.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/08.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/09.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/09.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/10.htm" afterPath="$PROJECT_DIR$/docs/jewel/bio/10.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/lyrics/spirit/Default.htm" afterPath="$PROJECT_DIR$/docs/jewel/lyrics/spirit/Default.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/atlantic.html" afterPath="$PROJECT_DIR$/docs/jewel/bio/atlantic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/disclaimer.htm" afterPath="$PROJECT_DIR$/docs/disclaimer.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/download/disclaimer_dl.htm" afterPath="$PROJECT_DIR$/docs/download/disclaimer_dl.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/misc/index copy.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/misc/index copy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/download/index.html" afterPath="$PROJECT_DIR$/docs/download/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/email/index.html" afterPath="$PROJECT_DIR$/docs/email/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/bio/index.html" afterPath="$PROJECT_DIR$/docs/jewel/bio/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/books/revealing_jewel/index.html" afterPath="$PROJECT_DIR$/docs/jewel/books/revealing_jewel/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/books/sessions_at_aol/index.html" afterPath="$PROJECT_DIR$/docs/jewel/books/sessions_at_aol/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/disc/index.html" afterPath="$PROJECT_DIR$/docs/jewel/disc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/guest/index.html" afterPath="$PROJECT_DIR$/docs/jewel/guest/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/links/index.html" afterPath="$PROJECT_DIR$/docs/jewel/links/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/lyrics/index.html" afterPath="$PROJECT_DIR$/docs/jewel/lyrics/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/lyrics/joy/index.html" afterPath="$PROJECT_DIR$/docs/jewel/lyrics/joy/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/lyrics/poy/index.html" afterPath="$PROJECT_DIR$/docs/jewel/lyrics/poy/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/013102/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/013102/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/071804/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/071804/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/102701/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/102701/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/120201VH1/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/120201VH1/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/120301winter/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/120301winter/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/122001/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/122001/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/ama/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/ama/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/ama2001/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/ama2001/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/amsterdam/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/amsterdam/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/birmingham/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/birmingham/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/boxing/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/boxing/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/coffee/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/coffee/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/frankfurt/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/frankfurt/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/glossy/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/glossy/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/grammies/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/grammies/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/hamburg/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/hamburg/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/high_school/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/high_school/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/lateshow/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/lateshow/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/live_performances/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/live_performances/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/london2/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/london2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/magazine/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/magazine/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/mix101/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/mix101/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/musicvideos/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/musicvideos/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/nashville/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/nashville/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/nightwithoutarmor/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/nightwithoutarmor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/photoshoot2/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/photoshoot2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/public_appearances/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/public_appearances/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/ridewiththedevil/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/ridewiththedevil/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/rodstewart/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/rodstewart/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/rso/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/rso/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/spirit/whats_simple_is_true/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/spirit/whats_simple_is_true/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/spirit_photoshoot/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/spirit_photoshoot/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/thisway/break_me/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/thisway/break_me/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/thisway/standing_still/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/thisway/standing_still/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/thisway/standing_still_ps/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/thisway/standing_still_ps/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/jewel/pics/thisway/this_way/index.html" afterPath="$PROJECT_DIR$/docs/jewel/pics/thisway/this_way/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/sitemap/index.html" afterPath="$PROJECT_DIR$/docs/sitemap/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/download/midi.html" afterPath="$PROJECT_DIR$/docs/download/midi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/download/other.html" afterPath="$PROJECT_DIR$/docs/download/other.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/privacy.htm" afterPath="$PROJECT_DIR$/docs/privacy.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/download/qt.html" afterPath="$PROJECT_DIR$/docs/download/qt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/email/thanks.htm" afterPath="$PROJECT_DIR$/docs/email/thanks.htm" />
+    </list>
+    <ignored path="foolishgames.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="foolishgames" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/docs/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="y" value="22" />
+    <option name="width" value="1916" />
+    <option name="height" value="1058" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foolishgames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="download" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="JavaScriptLanguageLevel" value="ES5" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/images" />
+      <recent name="$PROJECT_DIR$/docs/download/midi" />
+      <recent name="$PROJECT_DIR$/docs/styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48b48529-d2f8-4ddb-b35e-9c788020dd37" name="Default" comment="" />
+      <created>1394335969899</created>
+      <updated>1394335969899</updated>
+      <workItem from="1394335977045" duration="645000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="645000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="22" width="1916" height="1058" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/foolishgames.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/disclaimer.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="41" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.7247191" vertical-offset="0" max-vertical-offset="1335">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
