@@ -11,11 +11,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="HzpyOD4CxAyes6JEw_Gc0bZ2kLNCufUEoh98-Dh5F-8">
+    <meta name="keywords" content="Jewel Kilcher, biography, downloads, lyrics, links, poetry">
+    <meta name="description"
+          content="Jewel Kilcher site featuring a Biography, Lyrics, Downloads, and information about Jewel and her life.">
     <title>Foolish Games</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="components/angular-ui/build/angular-ui.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
@@ -36,38 +40,33 @@
     <header>
         <div class="row">
             <div class="span6">
-        <img src="images/foolish-games-text-sm.png" alt="Foolish Games">
+                <img src="images/foolish-games-text-sm.png" alt="Foolish Games">
             </div>
         </div>
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Biography</a></li>
-            <li><a href="#">Discography</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Pictures</a></li>
-            <li><a href="#">Social</a></li>
-        </ul>
-    </div>
-</div>
-
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a> <span class="divider">/</span></li>
-      <li><a href="#">Library</a> <span class="divider">/</span></li>
-      <li class="active">Data</li>
-    </ul>
-
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="#">Discography</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Pictures</a></li>
+                    <li><a href="#">Social</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-<!-- Add your site or application content here -->
-<div class="container" ng-view></div>
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view></div>
 
     <footer>
         <div id="siteInfo">
-          <img src="images/fg-tiny.png" alt="fg" width="44" height="32" id="fg-tiny"> <a href="/disclaimer">Legal</a> | <a href="/sitemap/">Site
-          Map</a> | <a href="/privacy">Privacy </a> | <a href="/email/index.html">E-mail</a> | <span style="color: #333333">&copy;1996-2010, 2014
+            <img src="images/fg-tiny.png" alt="fg" width="44" height="32" id="fg-tiny"> <a href="/disclaimer">Legal</a>
+            | <a href="/sitemap/">Site
+            Map</a> | <a href="/privacy">Privacy </a> | <a href="/email/index.html">E-mail</a> | <span
+                style="color: #333333">&copy;1996-2010, 2014
           Lucas Holt</span>
         </div>
     </footer>
@@ -81,9 +80,15 @@
 <script src="components/angular-cookies/angular-cookies.js"></script>
 <script src="components/angular-sanitize/angular-sanitize.js"></script>
 
+<script src="components/angular-ui/build/angular-ui.js"></script>
+<script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
 <!-- build:js scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/maincarousel.js"></script>
+<script src="scripts/services/news.js"></script>
 <!-- endbuild -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
