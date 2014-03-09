@@ -1,0 +1,81 @@
+/* 
+   CSS 1.0 for Foolish Games Bio 
+   02.06.2000  
+   All Rights Reserved. 
+*/
+
+body {
+  background: #FFFFFF;
+  color: black;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  margin-left: 5ex;
+  margin-right: 5ex;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 12pt;
+}
+
+a:link {
+  color: navy;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:visited {
+  color: purple;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:active {
+  color: red;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:hover {
+  color: red;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif; 
+  font-size: .9em;
+}
+
+.textindent {
+  text-indent: 5ex;
+}  
+
+p.firstone:first-letter {
+  font-size: 1.8em;
+; font-family: Georgia, "Times New Roman", Times, serif}
+
+.copy {
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida,
+     Arial, Helvetica, sans-serif;  
+  font-size: 9pt;
+}

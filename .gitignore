@@ -1,1 +1,4 @@
-luke/*
+docs/luke/*
+docs/games/*
+*.mno
+Thumbs.db
