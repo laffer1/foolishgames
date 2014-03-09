@@ -3,9 +3,13 @@ docs/games/*
 *.mno
 Thumbs.db
 .DS_Store
-
-.idea/workspace.xml
-
 *.mpg
-
 *.MOV
+node_modules
+dist
+.tmp
+.sass-cache
+.idea/workspace.xml
+.idea/dictionaries
+npm-debug.log
+~
