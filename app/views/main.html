@@ -1,5 +1,13 @@
 <div class="container">
     <div class="hero-unit">
+        <p style="text-indent: .3in; text-align: Justify; line-height: 1.5;"><span
+                                   style="font-size: 1.5em;">J</span>ewel
+                               Kilcher is a bright and rising artist who hit the scene back in 1995 with her debut release
+                               Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
+                               music community. To learn more about this amazing artist, please read the <a href="bio/index.html"
+                                                                                                            title="Jewel Biography by Lucas Holt">Biography.</a>
+                           </p>
+        </div>
         <div class="row">
             <div class="span6">
                 <div ng-controller="MainCarouselCtrl">
@@ -18,18 +26,48 @@
                     </div>
                 </div>
             </div>
+            <div class="span6">
+                <h2>A Jewel Fan Site</h2>
 
-            <div class="span4">
-                <p style="text-indent: .3in; text-align: Justify; line-height: 1.5;"><span
-                        style="font-size: 1.5em;">J</span>ewel
-                    Kilcher is a bright and rising artist who hit the scene back in 1995 with her debut release
-                    Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
-                    music community. To learn more about this amazing artist, please read the <a href="bio/index.html"
-                                                                                                 title="Jewel Biography by Lucas Holt">Biography.</a>
-                </p>
+                        <p class="silver">
+                            <strong>News</strong>
+                        </p>
+
+                        <ul style="list-style-type: circle;" onmouseover="this.style.color = 'blue';"
+                            onmouseout="this.style.color = 'black';">
+
+                            <li ng-repeat="item in news">
+                                <strong><a href="news/index#{{ item.id }}">{{ title }}
+
+                                                </a></strong><br />
+                                               <span class="newshead">{{ item.date }}
+                                                 </span>
+                            </li>
+                        </ul>
+                        <p>
+                            <span style="float: left; width: 150px;"><a href="news/index" title="More News"
+                                                                        style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more
+                                    news &gt;</a></span>
+                        </p>
             </div>
-        </div>
-    </div>
 
+        </div>
+
+
+    <div class="row">
+        <div class="span10 offset1">
+
+            <p>Learn about Jewel's book, <a href="books/revealing_jewel/index.html">Revealing Jewel</a>.</p>
+
+             <ul>
+                 <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
+                 <li><a href="../luke/dido.html" class="smalltext">Dido: life for rent, a review</a></li>
+                 <li><a href="news/review_sessions.html" class="smalltext">Sessions@AOL, a review </a></li>
+                 <li><a href="news/chart.html" class="smalltext">Chart Positions</a></li>
+             </ul>
+
+             <p><a href="http://www.justjournal.com/" title="JustJournal.com">Free Blog</a></p>
+                 </div>
+    </div>
 
 </div>
