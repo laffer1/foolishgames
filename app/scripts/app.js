@@ -1,13 +1,17 @@
 'use strict';
 
-angular.module('foolishgamesApp', [])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+angular.module('foolishgamesApp',
+                [   'ngSanitize',
+                    'ngResource',
+                    'ui',
+                    'ui.bootstrap'])
+        .config(function ($routeProvider) {
+            $routeProvider
+                    .when('/', {
+                        templateUrl: 'views/main.html',
+                        controller: 'MainCtrl'
+                    })
+                    .otherwise({
+                        redirectTo: '/'
+                    });
+        });
