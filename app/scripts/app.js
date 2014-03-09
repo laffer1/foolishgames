@@ -19,6 +19,10 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/biography.html',
                         controller: 'BiographyCtrl'
                     })
+                    .when('/books', {
+                        templateUrl: 'views/books.html',
+                        controller: 'BooksCtrl'
+                    })
                     .when('/discography', {
                         templateUrl: 'views/discography.html',
                         controller: 'DiscographyCtrl'
@@ -50,6 +54,10 @@ angular.module('foolishgamesApp',
                     .when('/privacy', {
                         templateUrl: 'views/privacy.html',
                         controller: 'PrivacyCtrl'
+                    })
+                    .when('/social/:page', {
+                        templateUrl: 'views/social.html',
+                        controller: 'SocialCtrl'
                     })
                     .when('/social', {
                         templateUrl: 'views/social.html',
