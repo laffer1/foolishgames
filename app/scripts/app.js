@@ -39,6 +39,10 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/pictures.html',
                         controller: 'PicturesCtrl'
                     })
+                    .when('/poetry', {
+                        templateUrl: 'views/poetry.html',
+                        controller: 'PoetryCtrl'
+                    })
                     .when('/social', {
                         templateUrl: 'views/social.html',
                         controller: 'SocialCtrl'
