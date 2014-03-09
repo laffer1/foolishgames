@@ -11,6 +11,10 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/main.html',
                         controller: 'MainCtrl'
                     })
+                    .when('/biography/:page', {
+                        controller: 'BiographyCtrl',
+                        templateUrl: 'views/biography.html'
+                    })
                     .when('/biography', {
                         templateUrl: 'views/biography.html',
                         controller: 'BiographyCtrl'

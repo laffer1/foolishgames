@@ -1,31 +1,50 @@
-<h2><img src="jewel_abio.gif" alt="Jewel, A Biography" height="58" width="180"/></h2>
-<h3>By Lucas Holt</h3>
-<p><b>Other Versions:</b></p>
-<ul>
-    <li><a href="http://www.nearyoualways.hpg.ig.com.br/bio.htm">Portuguese Translation</a>
-        by Fernando
-    </li>
-    <li><a href="../../download/biography.pdf">English Acrobat format</a> (4/2003)</li>
-    <li><a href="../../download/other/jewel.mov">Quicktime Slideshow</a> by Caryn
-        Holt (3/2003)
-    </li>
-</ul>
-<p><b>Table of Contents: (HTML Version, 2002)</b></p>
-<ol>
-    <li><a href="01.htm" title="The Beginning">The Beginning</a> (1974)</li>
-    <li><a href="02.htm" title="High School">High School</a> (1990)</li>
-    <li><a href="03.htm" title="The Turning Point">The Turning Point</a></li>
-    <li><a href="04.htm" title="Transition">Transition</a></li>
-    <li><a href="05.htm" title="A Night Without Armor">A Night Without Armor</a></li>
-    <li><a href="06.htm" title="Spirit">Spirit</a> (1998)</li>
-    <li><a href="07.htm" title="Ride with the Devil">Ride with the Devil</a> (1998)</li>
-    <li><a href="08.htm" title="The Cowboy">The Cowboy</a> (1999)</li>
-    <li><a href="09.htm" title="Chasing Down the Dawn">Chasing Down the Dawn</a></li>
-    <li><a href="10.htm" title="Contact Jewel">Contact Jewel</a></li>
-</ol>
-<p>Written by <a href="mailto:luke@foolishgames.com" title="E-mail the author">Lucas Holt, Luke@FoolishGames.com</a></p>
-<h3>Atlantic Records Bio for Jewel</h3>
-<ul>
-    <li><a href="atlantic.html" title="View the Atlantic Bio in HTML Format">html version</a></li>
-    <li><a href="../../download/bio_atlantic.pdf">Acrobat version (2001)</a></li>
-</ul>
+<div class="row">
+
+    <div class="span3">
+
+        <p><b>Table of Contents: <br>(HTML Version, 2002)</b></p>
+        <ul class="nav nav-pills nav-stacked">
+            <li data-ng-class="getClass('01')"><a href="#/biography/01" title="The Beginning">The Beginning (1974)</a></li>
+            <li data-ng-class="getClass('02')"><a href="#/biography/02" title="High School">High School (1990)</a></li>
+            <li data-ng-class="getClass('03')"><a href="#/biography/03" title="The Turning Point">The Turning Point</a></li>
+            <li data-ng-class="getClass('04')"><a href="#/biography/04" title="Transition">Transition</a></li>
+            <li data-ng-class="getClass('05')"><a href="#/biography/05" title="A Night Without Armor">A Night Without Armor</a></li>
+            <li data-ng-class="getClass('06')"><a href="#/biography/06" title="Spirit">Spirit (1998)</a></li>
+            <li data-ng-class="getClass('07')"><a href="#/biography/07" title="Ride with the Devil">Ride with the Devil (1998)</a></li>
+            <li data-ng-class="getClass('08')"><a href="#/biography/08" title="The Cowboy">The Cowboy (1999)</a></li>
+            <li data-ng-class="getClass('09')"><a href="#/biography/09" title="Chasing Down the Dawn">Chasing Down the Dawn</a></li>
+            <li data-ng-class="getClass('10')"><a href="#/biography/10" title="Contact Jewel">Contact Jewel</a></li>
+        </ul>
+    </div>
+
+    <div class="span9">
+        <div ng-show="page != null" ng-include src="page"></div>
+
+        <div ng-hide="page != null">
+            <h2><img src="../images/biography/jewel_abio.gif" alt="Jewel, A Biography" height="58" width="180"/></h2>
+
+                    <h3>By Lucas Holt</h3>
+
+            <p>Please select a section from the table of contents on the left.</p>
+
+            <p><b>Other Versions:</b></p>
+            <ul>
+                <li><a href="http://www.nearyoualways.hpg.ig.com.br/bio.htm">Portuguese Translation</a>
+                    by Fernando
+                </li>
+                <li><a href="../../download/biography.pdf">English Acrobat format</a> (4/2003)</li>
+                <li><a href="../../download/other/jewel.mov">Quicktime Slideshow</a> by Caryn
+                    Holt (3/2003)
+                </li>
+            </ul>
+            <p>Written by <a href="mailto:luke@foolishgames.com" title="E-mail the author">Lucas Holt,
+                Luke@FoolishGames.com</a></p>
+
+            <h3>Atlantic Records Bio for Jewel</h3>
+            <ul>
+                <li><a href="#/biography/atlantic" title="View the Atlantic Bio in HTML Format">html version</a></li>
+                <li><a href="../../download/bio_atlantic.pdf">Acrobat version (2001)</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
