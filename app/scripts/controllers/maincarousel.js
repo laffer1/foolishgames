@@ -7,15 +7,15 @@ angular.module('foolishgamesApp')
                 {
                     image: 'http://www.foolishgames.com/images/jewelroof.jpg',
                     width: 300,
-                    text: "Jewel"  ,
+                    text: "Jewel",
                     active: true
                 }   ,
                 {
-                                  image: 'http://www.foolishgames.com/images/jewelroof.jpg',
-                                  width: 300,
-                                  text: ""  ,
-                                  active: true
-                              }
+                    image: 'http://www.foolishgames.com/images/jewelroof.jpg',
+                    width: 300,
+                    text: "",
+                    active: true
+                }
             ];
 
         }
