@@ -1,0 +1,82 @@
+<?php
+/* FoolishGames.com
+   Email Sending Module
+   Version 1.0
+   Written by Lucas Holt, Luke@FoolishGames.com
+
+   Purpose:  Send content from form submission.
+
+   Implementation:  Uses libmail to send email.  requires php3?
+
+   Version History:
+   1.0   05/2002   Initial Release
+
+*/
+	include "libmail.php";
+
+	// Declare Variables
+	$blnError = False;
+
+//	$EmailFrom = trim( $HTTP_GET_VARS['from'] );
+//	$EmailFromName = trim( $HTTP_GET_VARS['name'] );
+//	$EmailBody = trim( $HTTP_GET_VARS['body'] );
+
+        $sn = trim( $HTTP_GET_VARS['sn'] );
+        $refsn = trim( $HTTP_GET_VARS['refsn'] );
+        $gain = trim( $HTTP_GET_VARS['gain'] );
+        $contrib = trim( $HTTP_GET_VARS['contrib'] );
+        $skills = trim( $HTTP_GET_VARS['skills'] );
+        $asset = trim( $HTTP_GET_VARS['asset'] );
+        $oguild = trim( $HTTP_GET_VARS['oguild'] );
+        $def = trim( $HTTP_GET_VARS['def'] );
+        $division = trim( $HTTP_GET_VARS['division'] );
+        $mname = trim( $HTTP_GET_VARS['mname'] );
+        $tzone = trim( $HTTP_GET_VARS['tzone'] );
+        $timeonline = trim( $HTTP_GET_VARS['timeonline'] );
+        $divmeeting = trim( $HTTP_GET_VARS['divmeeting'] );
+        $oocinchat = trim( $HTTP_GET_VARS['oocinchat'] );
+        $chardesc = trim( $HTTP_GET_VARS['chardesc'] );
+        $entrance = trim( $HTTP_GET_VARS['entrance'] );
+
+
+       $EmailBody = "Character Name: " . $sn . "\n Recruiter:" . $refsn . "\n Company Gain: " . $gain . "\n Character Contribution:" . $contrib . "\n Character Skills:" . $skills . "\n Company Asset:" . $asset . "\n Other Guilds:" . $oguild . "\n Definitions and Importance:" . $def . "\n division:" . $division . "\n Mundane Name:" . $mname . "\n Time Zone:" . $tzone . "\n time online:" . $timeonline . "\n Meeting Times:" . $divmeeting . "\n OoC in Chat:" .  $oocinchat . "\n Character Description:\n" . $chardesc . "\n\n Character Entrance:" . $entrance;
+
+
+	// Begin Code
+
+//	if ( strlen( $EmailFrom ) < 6 ) {
+//		$blnError = true;
+//		echo( "Email address is too short." );
+//	}
+
+//	if ( strlen( $EmailFromName ) < 2 ) {
+//		$blnError = true;
+//		echo( "Name is too short." );
+//	}
+
+//	if ( strlen( $EmailBody ) < 5 ) {
+//		$blnError = true;
+//		echo( "Message Body is too short." );
+//	}
+
+
+	if ( $blnError == false ) 
+	{
+		$m= new Mail; // create the mail
+	
+		$m->From( "webserver@foolishgames.com"  );
+		$m->To( "innerdissidence@aol.com" );
+		$m->Subject( "Awful Truth: Completed Application
+" );
+		$m->Body( $EmailBody );	// set the body 
+		$m->Priority(3) ;
+		$m->Send();	// send the mail
+	}
+
+	if ($blnError == False)
+	{
+		header("Location: http://www22.brinkster.com/theawfultruth/content/thanks.html");
+	} else {
+		echo("An error has occured.");
+	}
+?>
