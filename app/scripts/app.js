@@ -1,10 +1,10 @@
-'use strict';
-
 angular.module('foolishgamesApp',
-                [   'ngSanitize',
+                [
+                    'ngSanitize',
                     'ngResource',
                     'ui',
-                    'ui.bootstrap'])
+                    'ui.bootstrap'
+                ])
         .config(function ($routeProvider) {
             $routeProvider
                     .when('/', {
