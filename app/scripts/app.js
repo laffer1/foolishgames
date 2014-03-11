@@ -43,6 +43,10 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/news.html',
                         controller: 'NewsCtrl'
                     })
+                    .when('/pictures/:section/:page', {
+                        templateUrl: 'views/pictures.html',
+                        controller: 'PicturesCtrl'
+                    })
                     .when('/pictures', {
                         templateUrl: 'views/pictures.html',
                         controller: 'PicturesCtrl'
