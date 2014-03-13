@@ -1,10 +1,6 @@
-'use strict';
-
 angular.module('foolishgamesApp')
-  .controller('NewsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+        .controller('NewsCtrl', ['$scope', 'NewsService', function ($scope, NewsService) {
+            'use strict';
+
+            $scope.news = NewsService.query();
+        }]);

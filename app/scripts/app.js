@@ -1,24 +1,26 @@
 angular.module('foolishgamesApp',
-                [
-                    'ngSanitize',
-                    'ngResource',
-                    'ui',
-                    'ui.bootstrap'
-                ])
+[
+    'ngSanitize',
+    'ngResource',
+    'ui',
+    'ui.bootstrap'
+])
         .config(function ($routeProvider) {
+            'use strict';
+
             $routeProvider
-                    .when('/', {
-                        templateUrl: 'views/main.html',
-                        controller: 'MainCtrl'
-                    })
-                    .when('/biography/:page', {
-                        controller: 'BiographyCtrl',
-                        templateUrl: 'views/biography.html'
-                    })
-                    .when('/biography', {
-                        templateUrl: 'views/biography.html',
-                        controller: 'BiographyCtrl'
-                    })
+                .when('/', {
+                    templateUrl: 'views/main.html',
+                    controller: 'MainCtrl'
+                })
+                .when('/biography/:page', {
+                    controller: 'BiographyCtrl',
+                    templateUrl: 'views/biography.html'
+                })
+                .when('/biography', {
+                    templateUrl: 'views/biography.html',
+                    controller: 'BiographyCtrl'
+                })
                     .when('/books', {
                         templateUrl: 'views/books.html',
                         controller: 'BooksCtrl'

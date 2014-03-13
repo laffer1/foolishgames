@@ -1,20 +1,19 @@
 angular.module('foolishgamesApp')
-        .controller('BiographyCtrl', function ($scope, $routeParams) {
-            "use strict";
+        .controller('BiographyCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+            'use strict';
 
             $scope.page = null;
             $scope.slug = $routeParams.page;
 
-            if (typeof $routeParams.page != 'undefined') {
+            if (typeof $routeParams.page !== 'undefined') {
                 $scope.page = 'views/biography/' + $routeParams.page + '.htm';
             }
 
-            $scope.getClass = function(s) {
+            $scope.getClass = function (s) {
 
-              if (s == $scope.slug) {
-                  return 'active';
-              }
-              return '';
-            }
-
-        });
+                if (s === $scope.slug) {
+                    return 'active';
+                }
+                return '';
+            };
+        }]);

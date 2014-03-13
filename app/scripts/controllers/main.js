@@ -1,6 +1,6 @@
 angular.module('foolishgamesApp')
-        .controller('MainCtrl', function ($scope, NewsService) {
+        .controller('MainCtrl', ['$scope', 'NewsService', function ($scope, NewsService) {
             'use strict';
 
             $scope.news = NewsService.query();
-        });
+        }]);

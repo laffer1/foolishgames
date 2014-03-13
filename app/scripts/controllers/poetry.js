@@ -1,9 +1,10 @@
 angular.module('foolishgamesApp')
-        .controller('PoetryCtrl', function ($scope, $routeParams) {
+        .controller('PoetryCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+            'use strict';
             $scope.page = null;
             $scope.slug = $routeParams.page;
 
-            if (typeof $routeParams.page != 'undefined') {
+            if (typeof $routeParams.page !== 'undefined') {
                 $scope.page = 'views/poetry/' + $routeParams.section + '/' + $scope.slug + '.html';
             }
-        });
+        }]);
