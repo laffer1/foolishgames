@@ -122,5 +122,5 @@ angular.module('foolishgamesApp',
                     });
 
          //   $locationProvider.html5Mode(true);
-         //   $locationProvider.hashPrefix('!');
+          $locationProvider.hashPrefix('!');
         });

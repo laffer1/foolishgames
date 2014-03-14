@@ -37,12 +37,12 @@
                 onmouseout="this.style.color = 'black';">
 
                 <li ng-repeat="item in news | limitTo:5">
-                    <strong><a href="#/news/{{ item.id }}">{{ item.title }}</a></strong><br>
+                    <strong><a href="#!/news/{{ item.id }}">{{ item.title }}</a></strong><br>
                     <span class="newshead">{{ item.date }}</span>
                 </li>
             </ul>
             <p>
-               <span style="float: left; width: 150px;"><a href="#/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
+               <span style="float: left; width: 150px;"><a href="#!/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
             </p>
         </div>
 
@@ -52,16 +52,17 @@
     <div class="row">
         <div class="span10 offset1">
 
-            <p>Learn about Jewel's book, <a href="#/books/revealing_jewel">Revealing Jewel</a>.</p>
+            <p>Learn about Jewel's book, <a href="#!/books/revealing_jewel">Revealing Jewel</a>.</p>
 
             <ul>
                 <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
                 <li><a href="../luke/dido.html" class="smalltext">Dido: life for rent, a review</a></li>
-                <li><a href="#/news/review_sessions" class="smalltext">Sessions@AOL, a review </a></li>
-                <li><a href="#/news/chart" class="smalltext">Chart Positions</a></li>
+                <li><a href="#!/news/review_sessions" class="smalltext">Sessions@AOL, a review </a></li>
+                <li><a href="#!/news/chart" class="smalltext">Chart Positions</a></li>
             </ul>
 
             <p><a href="http://www.justjournal.com/" title="JustJournal.com">Free Blog</a></p>
+            <p>Powered by <a href="http://www.midnightbsd.org/">MidnightBSD</a></p>
         </div>
     </div>
 
