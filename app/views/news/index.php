@@ -99,7 +99,7 @@ $queryString_rs1 = sprintf("&totalRows_rs1=%d%s", $totalRows_rs1, $queryString_r
  <h2>News</h2>
   <p> Related Content: <a href="tour/2002.html" title="Tour Dates for 2002">TourDates 
     (2002)</a>, <a href="tour/1999.html" title="Tour Dates for 1999">Tour Dates 
-    (1999)</a>, <a href="chart.html">Chart Positions</a>, <a href="review_sessions.html">Sessions @ AOL Review</a></p>
+    (1999)</a>, <a href="../chart.html">Chart Positions</a>, <a href="../review_sessions.html">Sessions @ AOL Review</a></p>
 	
   <p><span class="brdthinsilver">Total: <?php echo $totalRows_rs1 ?> </span> <span class="brdthinsilver">Page: <?php echo $pageNum_rs1 ?></span> &nbsp; 
   </p>
