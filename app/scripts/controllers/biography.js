@@ -1,5 +1,6 @@
 angular.module('foolishgamesApp')
-        .controller('BiographyCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+        .controller('BiographyCtrl', ['$scope', '$routeParams', '$location', '$window',
+            function ($scope, $routeParams, $location, $window) {
             'use strict';
 
             $scope.page = null;
@@ -16,4 +17,8 @@ angular.module('foolishgamesApp')
                 }
                 return '';
             };
+
+            $scope.$on('$viewContentLoaded', function() {
+                $window._gaq.push(['_trackPageview', $location.path()]);
+              });
         }]);

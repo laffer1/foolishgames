@@ -1,6 +1,10 @@
 angular.module('foolishgamesApp')
-        .controller('MainCtrl', ['$scope', 'NewsService', function ($scope, NewsService) {
-            'use strict';
+        .controller('MainCtrl', ['$scope', '$location', '$window', 'NewsService',
+            function ($scope, $location, $window, NewsService) {
+                'use strict';
+                $scope.news = NewsService.query();
 
-            $scope.news = NewsService.query();
-        }]);
+                $scope.$on('$viewContentLoaded', function () {
+                    $window._gaq.push(['_trackPageview', $location.path()]);
+                });
+            }]);
