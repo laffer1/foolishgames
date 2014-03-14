@@ -6,7 +6,7 @@ angular.module('foolishgamesApp')
             $scope.slug = $routeParams.page;
 
             if (typeof $routeParams.page !== 'undefined') {
-                $scope.page = 'views/biography/' + $routeParams.page + '.htm';
+                $scope.page = 'views/biography/' + $routeParams.page + '.html';
             }
 
             $scope.getClass = function (s) {

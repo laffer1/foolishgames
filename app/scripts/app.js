@@ -1,26 +1,26 @@
 angular.module('foolishgamesApp',
-[
-    'ngSanitize',
-    'ngResource',
-    'ui',
-    'ui.bootstrap'
-])
+                [
+                    'ngSanitize',
+                    'ngResource',
+                    'ui',
+                    'ui.bootstrap'
+                ])
         .config(function ($routeProvider) {
             'use strict';
 
             $routeProvider
-                .when('/', {
-                    templateUrl: 'views/main.html',
-                    controller: 'MainCtrl'
-                })
-                .when('/biography/:page', {
-                    controller: 'BiographyCtrl',
-                    templateUrl: 'views/biography.html'
-                })
-                .when('/biography', {
-                    templateUrl: 'views/biography.html',
-                    controller: 'BiographyCtrl'
-                })
+                    .when('/', {
+                        templateUrl: 'views/main.html',
+                        controller: 'MainCtrl'
+                    })
+                    .when('/biography/:page', {
+                        controller: 'BiographyCtrl',
+                        templateUrl: 'views/biography.html'
+                    })
+                    .when('/biography', {
+                        templateUrl: 'views/biography.html',
+                        controller: 'BiographyCtrl'
+                    })
                     .when('/books', {
                         templateUrl: 'views/books.html',
                         controller: 'BooksCtrl'
@@ -45,6 +45,14 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/news.html',
                         controller: 'NewsCtrl'
                     })
+                    .when('/news/chart', {
+                        templateUrl: 'views/chart.html',
+                        controller: 'NewsCtrl'
+                    })
+                    .when('/news/review_sessions', {
+                        templateUrl: 'views/review_sessions.html',
+                        controller: 'NewsCtrl'
+                    })
                     .when('/pictures/:section/:page', {
                         templateUrl: 'views/pictures.html',
                         controller: 'PicturesCtrl'
@@ -65,8 +73,28 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/privacy.html',
                         controller: 'PrivacyCtrl'
                     })
-                    .when('/social/:page', {
-                        templateUrl: 'views/social.html',
+                    .when('/social/gbook1', {
+                        templateUrl: 'views/guest/gbook1.html',
+                        controller: 'SocialCtrl'
+                    })
+                    .when('/social/gbook2', {
+                        templateUrl: 'views/guest/gbook2.html',
+                        controller: 'SocialCtrl'
+                    })
+                    .when('/social/gbook3', {
+                        templateUrl: 'views/guest/gbook3.html',
+                        controller: 'SocialCtrl'
+                    })
+                    .when('/social/gbook4', {
+                        templateUrl: 'views/guest/gbook4.html',
+                        controller: 'SocialCtrl'
+                    })
+                    .when('/social/gbook5', {
+                        templateUrl: 'views/guest/gbook5.html',
+                        controller: 'SocialCtrl'
+                    })
+                    .when('/social/gbook6', {
+                        templateUrl: 'views/guest/gbook6.html',
                         controller: 'SocialCtrl'
                     })
                     .when('/social', {
