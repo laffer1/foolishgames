@@ -5,7 +5,7 @@ angular.module('foolishgamesApp',
                     'ui',
                     'ui.bootstrap'
                 ])
-        .config(function ($routeProvider) {
+        .config(function ($routeProvider, $locationProvider) {
             'use strict';
 
             $routeProvider
@@ -120,4 +120,7 @@ angular.module('foolishgamesApp',
                     .otherwise({
                         redirectTo: '/'
                     });
+
+         //   $locationProvider.html5Mode(true);
+         //   $locationProvider.hashPrefix('!');
         });
