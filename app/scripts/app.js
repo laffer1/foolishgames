@@ -41,8 +41,16 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/links.html',
                         controller: 'LinksCtrl'
                     })
-                    .when('/news', {
-                        templateUrl: 'views/news.html',
+                    .when('/lyrics', {
+                        templateUrl: 'views/lyrics/index.html',
+                        controller: 'LyricsCtrl'
+                    })
+                    .when('/news/tour/1999', {
+                        templateUrl: 'views/tour/1999.html',
+                        controller: 'NewsCtrl'
+                    })
+                    .when('/news/tour/2002', {
+                        templateUrl: 'views/tour/2002.html',
                         controller: 'NewsCtrl'
                     })
                     .when('/news/chart', {
@@ -51,6 +59,14 @@ angular.module('foolishgamesApp',
                     })
                     .when('/news/review_sessions', {
                         templateUrl: 'views/review_sessions.html',
+                        controller: 'NewsCtrl'
+                    })
+                    .when('/news/article/:id', {
+                        templateUrl: 'views/news.html',
+                        controller: 'NewsCtrl'
+                    })
+                    .when('/news', {
+                        templateUrl: 'views/news.html',
                         controller: 'NewsCtrl'
                     })
                     .when('/pictures/:section/:page', {
