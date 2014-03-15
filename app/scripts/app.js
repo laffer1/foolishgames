@@ -2,6 +2,7 @@ angular.module('foolishgamesApp',
                 [
                     'ngSanitize',
                     'ngResource',
+                    'ngRoute',
                     'ui',
                     'ui.bootstrap'
                 ])
