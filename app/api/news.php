@@ -49,7 +49,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     if (is_int($id) && $id > 0) {
-        $sql = "SELECT id, DATE_FORMAT(date, '%Y-%m-%dT%TZ') AS date, title, content FROM articles WHERE id=$id LIMIT 1";
+        $sql = "SELECT id, DATE_FORMAT(date, '%Y-%m-%dT%TZ') AS date, title, content FROM articles WHERE id='$id' LIMIT 1";
         $result = mysqli_query($conn, $sql);
 
         if ($myrow = mysqli_fetch_array($result, MYSQLI_BOTH)) {
