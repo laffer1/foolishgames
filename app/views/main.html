@@ -37,7 +37,7 @@
                 onmouseout="this.style.color = 'black';">
 
                 <li ng-repeat="item in news | limitTo:5">
-                    <strong><a href="#!/news/{{ item.id }}">{{ item.title }}</a></strong><br>
+                    <strong><a href="#!/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
                     <span class="newshead">{{ item.date }}</span>
                 </li>
             </ul>
