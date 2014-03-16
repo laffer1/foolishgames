@@ -38,6 +38,11 @@ class NewsItem
     public $content;
 }
 
+class Total
+{
+    public $count;
+}
+
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 if (!$conn) {
@@ -45,10 +50,23 @@ if (!$conn) {
     exit();
 }
 
-if (isset($_GET['id'])) {
+if (isset($_GET['total'])) {
+    $sql = "SELECT count(*) from articles;";
+        $result = mysqli_query($conn, $sql);
+
+        if ($myrow = mysqli_fetch_row($result)) {
+            $item = new Total();
+            $item->count = $myrow[0];
+
+            echo json_encode($item);
+        }
+
+        mysqli_free_result($result);
+}
+else if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    if (is_int($id) && $id > 0) {
+    if (is_numeric($id) && $id > 0) {
         $sql = "SELECT id, DATE_FORMAT(date, '%Y-%m-%dT%TZ') AS date, title, content FROM articles WHERE id='$id' LIMIT 1";
         $result = mysqli_query($conn, $sql);
 

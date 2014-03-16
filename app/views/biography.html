@@ -1,29 +1,11 @@
 <div class="row">
-
-    <div class="span3">
-
-        <p><b>Table of Contents: <br>(HTML Version, 2002)</b></p>
-        <ul class="nav nav-pills nav-stacked">
-            <li data-ng-class="getClass('01')"><a href="#!/biography/01" title="The Beginning">The Beginning (1974)</a></li>
-            <li data-ng-class="getClass('02')"><a href="#!/biography/02" title="High School">High School (1990)</a></li>
-            <li data-ng-class="getClass('03')"><a href="#!/biography/03" title="The Turning Point">The Turning Point</a></li>
-            <li data-ng-class="getClass('04')"><a href="#!/biography/04" title="Transition">Transition</a></li>
-            <li data-ng-class="getClass('05')"><a href="#!/biography/05" title="A Night Without Armor">A Night Without Armor</a></li>
-            <li data-ng-class="getClass('06')"><a href="#!/biography/06" title="Spirit">Spirit (1998)</a></li>
-            <li data-ng-class="getClass('07')"><a href="#!/biography/07" title="Ride with the Devil">Ride with the Devil (1998)</a></li>
-            <li data-ng-class="getClass('08')"><a href="#!/biography/08" title="The Cowboy">The Cowboy (1999)</a></li>
-            <li data-ng-class="getClass('09')"><a href="#!/biography/09" title="Chasing Down the Dawn">Chasing Down the Dawn</a></li>
-            <li data-ng-class="getClass('10')"><a href="#!/biography/10" title="Contact Jewel">Contact Jewel</a></li>
-        </ul>
-    </div>
-
-    <div class="span9">
+    <div class="span8">
         <div ng-show="page != null" ng-include src="page"></div>
 
         <div ng-hide="page != null">
             <h2><img src="../images/biography/jewel_abio.gif" alt="Jewel, A Biography" height="58" width="180"/></h2>
 
-                    <h3>By Lucas Holt</h3>
+            <h3>By Lucas Holt</h3>
 
             <p>Please select a section from the table of contents on the left.</p>
 
@@ -46,5 +28,26 @@
                 <li><a href="../../download/bio_atlantic.pdf">Acrobat version (2001)</a></li>
             </ul>
         </div>
+    </div>
+
+    <div class="offset1 span3">
+        <p><b>Table of Contents: <br>(HTML Version, 2002)</b></p>
+        <ul class="nav nav-pills nav-stacked">
+            <li data-ng-class="getClass('01')"><a href="#!/biography/01" title="The Beginning">The Beginning (1974)</a>
+            </li>
+            <li data-ng-class="getClass('02')"><a href="#!/biography/02" title="High School">High School (1990)</a></li>
+            <li data-ng-class="getClass('03')"><a href="#!/biography/03" title="The Turning Point">The Turning Point</a>
+            </li>
+            <li data-ng-class="getClass('04')"><a href="#!/biography/04" title="Transition">Transition</a></li>
+            <li data-ng-class="getClass('05')"><a href="#!/biography/05" title="A Night Without Armor">A Night Without
+                Armor</a></li>
+            <li data-ng-class="getClass('06')"><a href="#!/biography/06" title="Spirit">Spirit (1998)</a></li>
+            <li data-ng-class="getClass('07')"><a href="#!/biography/07" title="Ride with the Devil">Ride with the Devil
+                (1998)</a></li>
+            <li data-ng-class="getClass('08')"><a href="#!/biography/08" title="The Cowboy">The Cowboy (1999)</a></li>
+            <li data-ng-class="getClass('09')"><a href="#!/biography/09" title="Chasing Down the Dawn">Chasing Down the
+                Dawn</a></li>
+            <li data-ng-class="getClass('10')"><a href="#!/biography/10" title="Contact Jewel">Contact Jewel</a></li>
+        </ul>
     </div>
 </div>

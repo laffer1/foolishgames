@@ -1,14 +1,18 @@
 <div class="container">
     <div class="hero-unit">
+        <section>
         <p style="text-indent: .3in; text-align: Justify; line-height: 1.5;"><span
                 style="font-size: 1.5em;">J</span>ewel
-            Kilcher is a singer/songwriter, actress, and artist who hit the scene back in 1995 with her debut release
+            Kilcher is a <a href="#!/discography">singer/songwriter</a>, <a href="#!/books">author</a>,
+            actress, and artist who hit the scene back in 1995 with her debut release
             Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
-            music community. To learn more about this amazing artist, please read the <a href="#!/biography"
-                                                                                         title="Jewel Biography by Lucas Holt">Biography.</a>
+            music community. To learn more about this amazing artist,
+            please read the <a href="#!/biography" title="Jewel, A Biography by Lucas Holt">Biography.</a>
         </p>
+        </section>
     </div>
     <div class="row">
+        <section>
         <div class="span6">
             <div ng-controller="MainCarouselCtrl">
                 <div style="height: 335px">
@@ -38,21 +42,21 @@
 
                 <li ng-repeat="item in news | limitTo:5">
                     <strong><a href="#!/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
-                    <span class="newshead">{{ item.date }}</span>
+                    <span class="newshead">{{ item.date | date:'shortDate' }}</span>
                 </li>
             </ul>
             <p>
                <span style="float: left; width: 150px;"><a href="#!/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
             </p>
         </div>
-
+        </section>
     </div>
 
 
     <div class="row">
         <div class="span10 offset1">
-
-            <p>Learn about Jewel's book, <a href="#!/books/revealing_jewel">Revealing Jewel</a>.</p>
+            <nav>
+            <p>Learn about Jewel's book, <a href="#!/books">Revealing Jewel</a>.</p>
 
             <ul>
                 <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
@@ -63,6 +67,7 @@
 
             <p><a href="http://www.justjournal.com/" title="JustJournal.com">Free Blog</a></p>
             <p>Powered by <a href="http://www.midnightbsd.org/">MidnightBSD</a></p>
+            </nav>
         </div>
     </div>
 

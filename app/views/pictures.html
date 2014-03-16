@@ -1,6 +1,17 @@
 <h2 style="margin-bottom: 10px">Pictures</h2>
 
-<div ng-show="page != null" ng-include src="page"></div>
+<div class="row" ng-show="page != null">
+
+    <div class="span8" ng-include src="page"></div>
+    <div class="span3 offset1">
+        <nav>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#!/pictures">Table of Contents</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 
 <div ng-hide="page != null">
     <div class="row">

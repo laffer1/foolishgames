@@ -1,13 +1,32 @@
-<h2>News</h2>
-<p> Related Content: <a href="#!/news/tour/2002" title="Tour Dates for 2002">TourDates
-    (2002)</a>, <a href="#!/news/tour/1999" title="Tour Dates for 1999">Tour Dates
-    (1999)</a>, <a href="#!/news/chart">Chart Positions</a>, <a href="#!/news/review_sessions">Sessions @ AOL Review</a></p>
+<div class="row">
+    <div class="span8">
+        <section>
+            <h2>News</h2>
 
-<div data-ng-repeat="article in news">
-    <p><span class="silver">{{ article.date }}</span>
-        &nbsp;<strong><a name="{{ article.id }}">{{ article.title }}</a></strong>: <br>
-        <br>
-        {{ article.content }}</p>
+            <article data-ng-repeat="article in news">
+                <header>
+                    <h1><a name="{{ article.id }}">{{ article.title }}</a></h1>
+
+                    <p><span class="silver"><time pubdate="pubdate">{{ article.date | date:'shortDate' }}</time></span></p>
+                </header>
+                <p data-ng-bind-html='article.content.replace("\n","<br>")'></p>
+            </article>
+        </section>
+
+        <pagination on-select-page="setPage(page)" num-pages="pageCount" current-page="page" class="pagination"></pagination>
+    </div>
+
+    <div class="offset1 span3">
+        <nav>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#!/news/tour/2002" title="Tour Dates for 2002">TourDates
+                    (2002)</a></li>
+                <li><a href="#!/news/tour/1999" title="Tour Dates for 1999">Tour Dates
+                    (1999)</a></li>
+                <li><a href="#!/news/chart">Chart Positions</a></li>
+                <li><a href="#!/news/review_sessions">Sessions @ AOL
+                    Review</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
-
-
