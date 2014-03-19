@@ -3,7 +3,18 @@ angular.module('foolishgamesApp')
             function ($scope, $routeParams, $location, $window, NewsService) {
                 'use strict';
 
-                $scope.page = 1;
+                $scope.currentPage = 1;
+                $scope.pageCount = 1;
+
+                $scope.loadNews = function () {
+                    $scope.news = NewsService.query({pg: $scope.currentPage - 1});
+                };
+
+                $scope.setPage = function (pg) {
+                    $scope.currentPage = pg;
+                    $scope.loadNews();
+                };
+
 
                 if (typeof $routeParams.id !== 'undefined') {
                     $scope.id = $routeParams.id;
@@ -12,18 +23,9 @@ angular.module('foolishgamesApp')
                 } else {
                     $scope.total = NewsService.get({total: true}, function () {
                         $scope.pageCount = Math.ceil($scope.total.count / 10);
+                        $scope.setPage(1);
                     });
-                    $scope.loadNews();
                 }
-
-                $scope.setPage = function (pg) {
-                    $scope.page = pg;
-                    $scope.loadNews();
-                };
-
-                $scope.loadNews = function () {
-                    $scope.news = NewsService.query({pg: $scope.page});
-                };
 
                 $scope.$on('$viewContentLoaded', function () {
                     $window._gaq.push(['_trackPageview', $location.path()]);

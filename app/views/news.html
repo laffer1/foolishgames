@@ -9,11 +9,11 @@
 
                     <p><span class="silver"><time pubdate="pubdate">{{ article.date | date:'shortDate' }}</time></span></p>
                 </header>
-                <p data-ng-bind-html='article.content.replace("\n","<br>")'></p>
+                <p data-ng-bind-html="article.content"></p>
             </article>
         </section>
 
-        <pagination on-select-page="setPage(page)" num-pages="pageCount" current-page="page" class="pagination"></pagination>
+        <pagination data-ng-cloak="$scope.id > 0" on-select-page="setPage(page)" num-pages="pageCount" total-items="total.count" current-page="currentPage" class="pagination"></pagination>
     </div>
 
     <div class="offset1 span3">

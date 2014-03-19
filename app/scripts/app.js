@@ -4,7 +4,8 @@ angular.module('foolishgamesApp',
                     'ngResource',
                     'ngRoute',
                     'ui',
-                    'ui.bootstrap'
+                    'ui.bootstrap',
+                    'ui.bootstrap.pagination'
                 ])
         .config(function ($routeProvider, $locationProvider) {
             'use strict';
