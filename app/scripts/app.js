@@ -43,10 +43,19 @@ angular.module('foolishgamesApp',
                         templateUrl: 'views/links.html',
                         controller: 'LinksCtrl'
                     })
+                    .when('/lyrics/data/:page', {
+                        templateUrl: 'views/lyrics/index.html',
+                        controller: 'LyricsCtrl'
+                    })
+                    .when('/lyrics/all', {
+                        templateUrl: 'views/lyrics/lyrics.html',
+                        controller: 'LyricsCtrl'
+                    })
                     .when('/lyrics', {
                         templateUrl: 'views/lyrics/index.html',
                         controller: 'LyricsCtrl'
                     })
+
                     .when('/news/tour/1999', {
                         templateUrl: 'views/tour/1999.html',
                         controller: 'NewsCtrl'
@@ -123,6 +132,6 @@ angular.module('foolishgamesApp',
                         redirectTo: '/'
                     });
 
-         //   $locationProvider.html5Mode(true);
-          $locationProvider.hashPrefix('!');
+            //   $locationProvider.html5Mode(true);
+            $locationProvider.hashPrefix('!');
         });
