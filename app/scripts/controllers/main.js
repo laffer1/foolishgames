@@ -5,6 +5,6 @@ angular.module('foolishgamesApp')
                 $scope.news = NewsService.query();
 
                 $scope.$on('$viewContentLoaded', function () {
-                    $window._gaq.push(['_trackPageview', $location.path()]);
+                    $window.ga('send', 'pageview');
                 });
             }]);

@@ -3,6 +3,6 @@ angular.module('foolishgamesApp')
             'use strict';
 
             $scope.$on('$viewContentLoaded', function () {
-                $window._gaq.push(['_trackPageview', $location.path()]);
+                $window.ga('send', 'pageview');
             });
         }]);
