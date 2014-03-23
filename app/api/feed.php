@@ -1,88 +1,65 @@
 <?php
-function gzip_compression() {
 
-    //If no encoding was given - then it must not be able to accept gzip pages
-    if( empty($_SERVER['HTTP_ACCEPT_ENCODING']) ) { return false; }
+require_once 'core/init.inc.php';
+require_once 'core/db.inc.php';
+require_once 'core/gzip.inc.php';
 
-    //If zlib is not ALREADY compressing the page - and ob_gzhandler is set
-    if (( ini_get('zlib.output_compression') == 'On'
-    	OR ini_get('zlib.output_compression_level') > 0 )
-    	OR ini_get('output_handler') == 'ob_gzhandler' ) {
-    	return false;
-    }
-
-    //Else if zlib is loaded start the compression.
-    if ( extension_loaded( 'zlib' ) AND (strpos($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') !== FALSE) ) {
-    	ob_start('ob_gzhandler');
-    }
-
-    return true;
-}
-
-gzip_compression();
+require_once 'model/NewsItem.inc.php';
+require_once 'model/Total.inc.php';
 
 header('Content-type: application/rss+xml');
 mb_http_output("iso-8859-1");
 
-include( 'dbinfo.php' );
-
 echo '<?xml version="1.0" encoding="ISO-8859-1" ?>' . "\n";
 ?>
 <rss version="2.0">
-	<channel>
-		<title>Jewel News Feed</title>
+    <channel>
+        <title>Jewel News Feed</title>
         <link>http://www.foolishgames.com/#/news</link>
-   		<description>Foolish Games Jewel News</description>
-		<language>en-us</language>
-		<webMaster>luke@foolishgames.com</webMaster>
-		<managingEditor>luke@foolishgames.com</managingEditor>
-		<copyright>Copyright 2007 Lucas Holt</copyright>
-		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
-		<ttl>360</ttl>
-<?php
-$currentPage = $_SERVER["PHP_SELF"];
+        <description>Foolish Games Jewel News</description>
+        <language>en-us</language>
+        <webMaster>luke@foolishgames.com</webMaster>
+        <managingEditor>luke@foolishgames.com</managingEditor>
+        <copyright>Copyright 2007 Lucas Holt</copyright>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <ttl>360</ttl>
+        <?php
+        $currentPage = $_SERVER["PHP_SELF"];
 
-$conn = mysqli_connect( $dbhost, $dbuser, $dbpass, $dbname );
+        try {
+            $conn = $DB->connect();
 
-/* check connection */
-if (!$conn) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
-}
+            $sql = 'SELECT id, date, title, content FROM articles ORDER BY date DESC, id DESC LIMIT 14 OFFSET 0';
 
-$sql = 'SELECT id, date, title, content FROM articles ORDER BY date DESC, id DESC LIMIT 0,14';
+            $result = $DB->execQuery($sql);
 
+            if ($myrow = $result->fetch()) {
 
-$result = mysqli_query( $conn, $sql );
+                do {
+                    $subject = $myrow["title"];
+                    $body = $myrow["content"];
 
-if ($myrow = mysqli_fetch_array($result, MYSQLI_BOTH)) {
+                    echo "<item>\n";
 
-  do {
-  	$subject = $myrow["title"];
-  	$body = $myrow["content"];
-				
-    echo "<item>";
-    
-	echo "<title>";
-	echo $subject;
-	echo "</title>";
-    
-	echo "<link>http://www.foolishgames.com/#/news/";
-	echo $myrow["id"]; 
-	echo "</link>";
-	
-    echo "<description>";
-    echo $body;
-	echo "</description>";
-	echo "</item>";
+                    echo "\t<title>";
+                    echo $subject;
+                    echo "</title>\n";
 
-  } while ($myrow = mysqli_fetch_array($result));
-}
+                    echo "\t<link>http://www.foolishgames.com/#/news/";
+                    echo $myrow["id"];
+                    echo "</link>\n";
 
-mysqli_free_result($result);
+                    echo "\t<description>";
+                    echo $body;
+                    echo "</description>\n";
+                    echo "</item>\n";
 
-/* close connection */
-mysqli_close($conn);
-?>
-</channel>
+                } while ($myrow = $result->fetch());
+            }
+            $DB->disconnect();
+        } catch (Exception $e) {
+
+        }
+        ?>
+    </channel>
 </rss>
