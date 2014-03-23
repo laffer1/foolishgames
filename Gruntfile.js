@@ -7,7 +7,7 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
+  grunt.loadNpmTasks('grunt-cdn');
   // configurable paths
   var yeomanConfig = {
     app: 'app',
@@ -20,6 +20,15 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     yeoman: yeomanConfig,
+    cdn: {
+        options: {
+	   cdn: 'http://d2w50r73yh5cam.cloudfront.net/',
+           flatten: true
+        },
+	dist: {
+		src: ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css']
+	}
+    },
     watch: {
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
@@ -187,6 +196,7 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
+		removeAttributeQuotes: false
           /*removeCommentsFromCDATA: true,
           // https://github.com/yeoman/grunt-usemin/issues/44
           //collapseWhitespace: true,
@@ -292,6 +302,7 @@ module.exports = function (grunt) {
     'htmlmin',
     'copy',
     'cdnify',
+    'cdn',
     'ngmin',
     'uglify',
     'rev',

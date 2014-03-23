@@ -23,6 +23,7 @@
     "grunt-karma": "~0.3.0",
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.1",
+    "grunt-cdn": "latest",
     "grunt-google-cdn": "~0.1.1",
     "google-cdn-data": "~0.1.2",
     "cdnjs-cdn-data": "latest",
