@@ -13,3 +13,4 @@ dist
 .idea/dictionaries
 npm-debug.log
 ~
+dataSources.xml
