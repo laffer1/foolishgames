@@ -14,3 +14,4 @@ dist
 npm-debug.log
 ~
 dataSources.xml
+app/components/jquery
