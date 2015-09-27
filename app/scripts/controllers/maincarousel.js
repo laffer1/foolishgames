@@ -11,6 +11,12 @@ angular.module('foolishgamesApp')
         active: true
       },
       {
+        image: 'http://www.foolishgames.com/images/books/never_broken.jpg',
+        width: 298,
+        text: '',
+        active: true
+      },
+      {
         image: 'http://www.foolishgames.com/images/jewelroof.jpg',
         width: 300,
         text: 'Jewel',
