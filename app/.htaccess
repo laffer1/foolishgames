@@ -554,4 +554,4 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 </IfModule>
 
 
-Redirect /jewel/guest /#/social
+Redirect /jewel/guest /#!/social
