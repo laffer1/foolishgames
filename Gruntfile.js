@@ -40,7 +40,8 @@ module.exports = function (grunt) {
         /** @required  - puts results here with respect to relative paths  */
         dest: './dist/',
         /** @required  - files to process */
-        src:  ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css'] //['index.html', '*.css', '{,*/}*.html', '{,**/}*.html']
+        src:  ['*.html', 'views/*.html', 'styles/*.css']
+        //['index.html', '*.css', '{,*/}*.html', '{,**/}*.html']
       }
     },
 
@@ -422,7 +423,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*,',
+            'views/{,*/}*.html'
           ]
         }, {
           expand: true,
