@@ -339,7 +339,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'bApp',
+          module: 'foolishgamesApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
