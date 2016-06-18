@@ -2,6 +2,8 @@
 
 module.exports = function (grunt) {
 
+  grunt.loadNpmTasks('grunt-cdn');
+
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -24,15 +26,24 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: appConfig,
 
-   /* cdn: {
+    cdn: {
       options: {
         cdn: '//d2w50r73yh5cam.cloudfront.net/',
         flatten: true
       },
+
       dist: {
-        src: ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css']
+     //   src: ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css']
+
+        /** @required  - gets sources here, may be same as dest  */
+         cwd: './dist/',
+        /** @required  - puts results here with respect to relative paths  */
+        dest: './dist/',
+        /** @required  - files to process */
+        src:  ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css'] //['index.html', '*.css', '{,*/}*.html', '{,**/}*.html']
       }
-    },    */
+    },
+
     watch: {
       bower: {
         files: ['bower.json'],
@@ -130,6 +141,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     // Make sure there are no obvious mistakes
     jshint: {
       options: {
@@ -149,6 +161,7 @@ module.exports = function (grunt) {
         src: ['test/spec/{,*/}*.js']
       }
     },
+
     // Make sure code styles are up to par
     jscs: {
       options: {
@@ -350,10 +363,10 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          collapseWhitespace: true,
+          collapseWhitespace: false,          // buggy
           conservativeCollapse: true,
           collapseBooleanAttributes: true,
-          removeCommentsFromCDATA: true
+          removeCommentsFromCDATA: false              // buggy
         },
         files: [{
           expand: true,
@@ -499,6 +512,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
+    'cdn',
     'htmlmin'
   ]);
 
