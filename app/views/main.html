@@ -1,74 +1,96 @@
-<div class="container">
-    <div class="hero-unit">
-        <section>
-        <p style="text-indent: .3in; text-align: Justify; line-height: 1.5;"><span
-                style="font-size: 1.5em;">J</span>ewel
-            Kilcher is a <a href="/discography">singer/songwriter</a>, <a href="/books">author</a>,
-            actress, and artist who hit the scene back in 1995 with her debut release
-            Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
-            music community. To learn more about this amazing artist,
-            please read the <a href="/biography" title="Jewel, A Biography by Lucas Holt">Biography.</a>
+<section>
+  <div class="jumbotron col-md-10">
+    <div class="row">
+
+
+      <div class=" col-md-2">
+        <img src="images/336px-Jewel_2009.jpg" style="width: 118px;"
+             title="By Yodel Anecdotal/Yahoo! Inc (Jewel, 2009) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)]">
+
+      </div>
+
+      <div class="col-md-10">
+        <p style="text-indent: .3in; text-align: Justify; line-height: 1.8; font-size: 1.6em"><span
+          style="font-size: 1.5em;">J</span>ewel
+          Kilcher is a <a href="/discography">singer/songwriter</a>, <a href="/books">author</a>,
+          actress, and artist who hit the scene back in 1995 with her debut release
+          Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
+          music community. To learn more about this amazing artist,
+          please read the <a href="/biography" title="Jewel, A Biography by Lucas Holt">Biography.</a>
         </p>
-        </section>
+
+        <p>Learn about Jewel's book, <a href="/books">Never Broken: Songs Are Only Half the Story</a>.</p>
+      </div>
+
     </div>
-    <div class="row">
-        <section>
-        <div class="col-md-6">
-            <div ng-controller="MainCarouselCtrl">
-                <div style="height: 480px">
+  </div>
+</section>
 
-                  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                       <img ng-src="{{slide.image}}" style="margin:auto;">
-                       <div class="carousel-caption">
-                         <h4>Slide {{slide.id}}</h4>
-                         <p>{{slide.text}}</p>
-                       </div>
-                     </uib-slide>
-                   </uib-carousel>
+<div class="row">
+  <section>
 
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h2>A Jewel Fan Site</h2>
+    <div class="col-md-3">
+         <div ng-controller="MainCarouselCtrl">
+           <div style="height: 480px; width: 335px;">
 
-            <p class="silver">
-                <strong>News</strong>
-            </p>
+             <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+               <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                 <img ng-src="{{slide.image}}" style="margin:auto;">
+                 <div class="carousel-caption">
+                   <h4>Slide {{slide.id}}</h4>
+                   <p>{{slide.text}}</p>
+                 </div>
+               </uib-slide>
+             </uib-carousel>
 
-            <ul style="list-style-type: circle;" onmouseover="this.style.color = 'blue';"
-                onmouseout="this.style.color = 'black';">
+           </div>
+         </div>
+       </div>
 
-                <li ng-repeat="item in news | limitTo:5">
-                    <strong><a href="/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
-                    <span class="newshead">{{ item.date | date:'shortDate' }}</span>
-                </li>
-            </ul>
-            <p>
-               <span style="float: left; width: 150px;"><a href="/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
-            </p>
-        </div>
-        </section>
+    <div class="col-md-4">
+      <h2>A Jewel Fan Site</h2>
+
+      <p class="silver">
+        <strong>News</strong>
+      </p>
+
+      <ul style="list-style-type: circle;" onmouseover="this.style.color = 'blue';"
+          onmouseout="this.style.color = 'black';">
+        <li ng-repeat="item in news | limitTo:5">
+          <strong><a href="/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
+          <span class="newshead">{{ item.date | date:'shortDate' }}</span>
+        </li>
+      </ul>
+      <p>
+        <span style="float: left; width: 150px;"><a href="/news" title="More News"
+                                                    style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
+      </p>
+
     </div>
 
+    <div class="col-md-3">
+      <a class="twitter-timeline" data-lang="en" data-width="330" data-height="480" href="https://twitter.com/jeweljk">Tweets by jeweljk</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 
     <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-            <nav>
-            <p>Learn about Jewel's book, <a href="/books">Never Broken: Songs Are Only Half the Story</a>.</p>
-            <p><a href="http://www.justjournal.com/" title="JustJournal.com">Free Blog</a></p>
-            <p>Powered by <a href="http://www.midnightbsd.org/">MidnightBSD</a></p>
-            </nav>
-        </div>
-      <div class="col-md-5">
-        <ul>
-                <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
-                <li><a href="../luke/dido.html" class="smalltext">Dido: life for rent, a review</a></li>
-                <li><a href="/news/review_sessions" class="smalltext">Sessions@AOL, a review </a></li>
-                <li><a href="/news/chart" class="smalltext">Chart Positions</a></li>
-              </ul>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+                      <li><a href="/news/chart">Chart Positions</a></li>
+                      <li><a href="/news/review_sessions">Sessions@AOL, a review </a></li>
+
+
+                    </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+
+                             <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
+                             <li><a href="../luke/dido.html">Dido: life for rent, a review</a></li>
+
+
+                           </ul>
       </div>
     </div>
 
+  </section>
 </div>
