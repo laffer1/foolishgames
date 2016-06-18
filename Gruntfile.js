@@ -10,7 +10,10 @@ module.exports = function (grunt) {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
+
   });
+
+  var modRewrite = require('connect-modrewrite');
 
   // Configurable paths for the application
   var appConfig = {
@@ -21,7 +24,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: appConfig,
 
-    cdn: {
+   /* cdn: {
       options: {
         cdn: '//d2w50r73yh5cam.cloudfront.net/',
         flatten: true
@@ -29,7 +32,7 @@ module.exports = function (grunt) {
       dist: {
         src: ['./dist/*.html', './dist/views/*.html', './dist/styles/*.css']
       }
-    },
+    },    */
     watch: {
       bower: {
         files: ['bower.json'],
@@ -55,7 +58,19 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          livereload: '<%= connect.options.livereload %>'
+          livereload: '<%= connect.options.livereload %>'   ,
+          open: true,
+                                 middleware: function (connect) {
+                                     return [
+                                         modRewrite(['^(?!/api)[^\\.]*$ /index.html [L]']),
+                                         connect.static('.tmp'),
+                                         connect().use(
+                                             '/bower_components',
+                                             connect.static('./bower_components')
+                                         ),
+                                         connect.static(appConfig.app)
+                                     ];
+                                 }
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
@@ -76,6 +91,7 @@ module.exports = function (grunt) {
           open: true,
           middleware: function (connect) {
             return [
+              modRewrite(['^(?!/api)[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -88,6 +104,7 @@ module.exports = function (grunt) {
               connect.static(appConfig.app)
             ];
           }
+
         }
       },
       test: {
@@ -202,7 +219,7 @@ module.exports = function (grunt) {
         devDependencies: true,
         src: '<%= karma.unit.configFile %>',
         ignorePath: /\.\.\//,
-        fileTypes: {
+        fileTypes:{
           js: {
             block: /(([\s\t]*)\/{2}\s*?bower:\s*?(\S*))(\n|\r|.)*?(\/{2}\s*endbower)/gi,
             detect: {
@@ -296,6 +313,17 @@ module.exports = function (grunt) {
         }
       }
     },
+
+     cssmin: {
+      dist: {
+       files: {
+            '<%= yeoman.dist %>/styles/main.css': [
+             '.tmp/styles/{,*/}*.css'
+         ]
+         }
+       }
+      },
+
 
     imagemin: {
       dist: {
@@ -481,5 +509,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.registerTask('default', ['build']);
 };

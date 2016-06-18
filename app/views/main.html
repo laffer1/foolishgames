@@ -3,34 +3,34 @@
         <section>
         <p style="text-indent: .3in; text-align: Justify; line-height: 1.5;"><span
                 style="font-size: 1.5em;">J</span>ewel
-            Kilcher is a <a href="#!/discography">singer/songwriter</a>, <a href="#!/books">author</a>,
+            Kilcher is a <a href="/discography">singer/songwriter</a>, <a href="/books">author</a>,
             actress, and artist who hit the scene back in 1995 with her debut release
             Pieces of You. Since then she has proven her exceptional ability and has gained respect among the
             music community. To learn more about this amazing artist,
-            please read the <a href="#!/biography" title="Jewel, A Biography by Lucas Holt">Biography.</a>
+            please read the <a href="/biography" title="Jewel, A Biography by Lucas Holt">Biography.</a>
         </p>
         </section>
     </div>
     <div class="row">
         <section>
-        <div class="span6">
+        <div class="col-md-6">
             <div ng-controller="MainCarouselCtrl">
                 <div style="height: 480px">
-                    <carousel interval="myInterval">
-                        <slide ng-repeat="slide in slides" active="slide.active">
-                            <img ng-src="{{slide.image}}" style="margin:auto;">
 
-                            <div class="carousel-caption">
-                                <h4>Slide {{$index}}</h4>
+                  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                       <img ng-src="{{slide.image}}" style="margin:auto;">
+                       <div class="carousel-caption">
+                         <h4>Slide {{slide.id}}</h4>
+                         <p>{{slide.text}}</p>
+                       </div>
+                     </uib-slide>
+                   </uib-carousel>
 
-                                <p>{{slide.text}}</p>
-                            </div>
-                        </slide>
-                    </carousel>
                 </div>
             </div>
         </div>
-        <div class="span6">
+        <div class="col-md-6">
             <h2>A Jewel Fan Site</h2>
 
             <p class="silver">
@@ -41,12 +41,12 @@
                 onmouseout="this.style.color = 'black';">
 
                 <li ng-repeat="item in news | limitTo:5">
-                    <strong><a href="#!/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
+                    <strong><a href="/news/article/{{ item.id }}">{{ item.title }}</a></strong><br>
                     <span class="newshead">{{ item.date | date:'shortDate' }}</span>
                 </li>
             </ul>
             <p>
-               <span style="float: left; width: 150px;"><a href="#!/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
+               <span style="float: left; width: 150px;"><a href="/news" title="More News" style="font: 1.3em Arial, Helvetica, sans-serif; margin-left: .2in; color: black; text-decoration: none;">more news &gt;</a></span>
             </p>
         </div>
         </section>
@@ -54,19 +54,19 @@
 
 
     <div class="row">
-        <div class="span5 offset1">
+        <div class="col-md-5 col-md-offset-1">
             <nav>
-            <p>Learn about Jewel's book, <a href="#!/books">Never Broken: Songs Are Only Half the Story</a>.</p>
+            <p>Learn about Jewel's book, <a href="/books">Never Broken: Songs Are Only Half the Story</a>.</p>
             <p><a href="http://www.justjournal.com/" title="JustJournal.com">Free Blog</a></p>
             <p>Powered by <a href="http://www.midnightbsd.org/">MidnightBSD</a></p>
             </nav>
         </div>
-      <div class="span5">
+      <div class="col-md-5">
         <ul>
                 <li><a href="../luke/stp.html">Stone Temple Pilots: Thank You review</a></li>
                 <li><a href="../luke/dido.html" class="smalltext">Dido: life for rent, a review</a></li>
-                <li><a href="#!/news/review_sessions" class="smalltext">Sessions@AOL, a review </a></li>
-                <li><a href="#!/news/chart" class="smalltext">Chart Positions</a></li>
+                <li><a href="/news/review_sessions" class="smalltext">Sessions@AOL, a review </a></li>
+                <li><a href="/news/chart" class="smalltext">Chart Positions</a></li>
               </ul>
       </div>
     </div>
