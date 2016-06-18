@@ -16,3 +16,4 @@ npm-debug.log
 dataSources.xml
 app/components/jquery
 bower_components
+dataSources.local.xml
